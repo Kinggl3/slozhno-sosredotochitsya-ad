@@ -255,12 +255,12 @@
     width: 364px;
     max-width: 364px;
     justify-self: start;
-    align-self: start; 
-    margin-top: 142px; 
+    align-self: start;
+    margin-top: 142px;
     margin-left: 100px;
   }
   .section:nth-child(2) .section__title {
-    max-width: 320px;
+    max-width: 120px;
     width: fit-content;
   }
 
