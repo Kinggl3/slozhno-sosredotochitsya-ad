@@ -254,7 +254,7 @@
     grid-column: 2 / 3;
     width: 100%;
     justify-self: start;
-    align-self: center; /* Выравниваем абзац ровно по центру нижней трети */
+    align-self: center;
   }
 
   .main {
@@ -264,6 +264,11 @@
 
   .section {
     grid-template-columns: 1fr 2fr;
+  }
+
+  /* Исправление: на 768px вторая секция занимает всю ширину (1 колонку) */
+  .section:nth-child(2) {
+    grid-template-columns: 1fr;
   }
 
   .section.gallery {
@@ -315,7 +320,6 @@
     flex-direction: row;
   }
 
-  /* Исправление для Секции 2: раскидываем карточки на 3 колонки во всю ширину */
   .section:nth-child(2) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -327,5 +331,17 @@
   .section:nth-child(2) .section__content {
     grid-column: 1 / -1;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section:nth-child(1) .section__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section:nth-child(3) .section__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card__subtitle {
+    grid-column: 1 / -1;
   }
 }
