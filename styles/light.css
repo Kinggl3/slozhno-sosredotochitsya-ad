@@ -3,10 +3,14 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+
 :root.theme-light {
   --bg-color: #fff1f7;
-  --text-color: #323232;
+  --text-color: #353430;
   --accent-color: #ff8dcb;
+  --section-title-color: #353430;
+  --decor-text-color: #353430;
+  --header-title-color: #ffc2e6;
   --bg-image: url('../images/cover-image-light.png');
 }
 
@@ -17,8 +21,11 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff1f7;
-    --text-color: #323232;
+    --text-color: #353430;
     --accent-color: #ff8dcb;
+    --section-title-color: #353430;
+    --decor-text-color: #353430;
+    --header-title-color: #ffc2e6;
     --bg-image: url('../images/cover-image-light.png');
   }
 
