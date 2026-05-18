@@ -251,15 +251,16 @@
   }
 
   .header__description {
-      grid-column: 2 / 3;
-      width: 364px;
-      max-width: 364px;
-      justify-self: start;
-      align-self: center;
+    grid-column: 2 / 3;
+    width: 364px;
+    max-width: 364px;
+    justify-self: start;
+    align-self: start; 
+    margin-top: 142px; 
+    margin-left: 100px;
   }
-
   .section:nth-child(2) .section__title {
-    max-width: 340px;    
+    max-width: 320px;
     width: fit-content;
   }
 
